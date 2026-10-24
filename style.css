@@ -2316,12 +2316,10 @@ a[href^="tel:"] {
 }
   flex-shrink: 0;
 }
-/* 学びの教室が大切にする → 青色 */
 .values-title span {
   color: #0077bb !important;
 }
 
-/* 5つのこと → ピンク色 */
 .values-title strong {
   color: #ff5792 !important;
 }
