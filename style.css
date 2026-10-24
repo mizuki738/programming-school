@@ -2316,10 +2316,33 @@ a[href^="tel:"] {
 }
   flex-shrink: 0;
 }
+/* 見出しの色 */
 .values-title span {
   color: #0077bb !important;
 }
 
 .values-title strong {
   color: #ff5792 !important;
+}
+
+/* スマートフォン表示 */
+@media (max-width: 600px) {
+  .values-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .values-title span {
+    font-size: 18px;
+    white-space: nowrap;
+  }
+
+  .values-title strong {
+    font-size: 28px;
+    white-space: nowrap;
+  }
 }
