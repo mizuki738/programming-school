@@ -2824,11 +2824,10 @@ a[href^="tel:"] {
     align-self: end;
   }
 }
-/* コース紹介の対象表示を大きくする */
-.course-card > b {
+/* コース対象表示の文字を大きくする */
+.course-grid .course-card > b {
   font-size: 14px !important;
-  font-weight: 700;
-  padding: 7px 12px;
+  font-weight: 700 !important;
   line-height: 1.5;
-  border-radius: 20px;
+  padding: 6px 12px;
 }
