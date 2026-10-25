@@ -2733,3 +2733,45 @@ a[href^="tel:"] {
 .courses {
   background: #fffaf2;
 }
+/* コースカードの高さを統一 */
+.course-grid {
+  align-items: stretch;
+}
+
+.course-card {
+  height: 100%;
+}
+
+/* 横長カードの高さと対象表示を統一 */
+@media (min-width: 701px) {
+  .course-card {
+    display: grid;
+    grid-template-columns: 42% minmax(0, 1fr);
+    grid-template-rows: auto 1fr auto;
+    column-gap: 16px;
+    min-height: 225px;
+    align-content: stretch;
+  }
+
+  .course-card .course-photo {
+    grid-column: 1;
+    grid-row: 1 / 4;
+    align-self: start;
+  }
+
+  .course-card h3 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .course-card p {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .course-card > b {
+    grid-column: 2;
+    grid-row: 3;
+    align-self: end;
+  }
+}
