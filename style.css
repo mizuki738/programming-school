@@ -386,7 +386,7 @@ body {
   border-radius: 99px;
   padding: 3px 9px;
   color: #fff;
-  font-size: 9px
+  font-size: 12px
 }
 
 .orange h3 {
@@ -2824,10 +2824,5 @@ a[href^="tel:"] {
     align-self: end;
   }
 }
-/* コース対象表示の文字を大きくする */
-.course-grid .course-card > b {
-  font-size: 14px !important;
-  font-weight: 700 !important;
-  line-height: 1.5;
-  padding: 6px 12px;
+
 }
