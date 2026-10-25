@@ -2635,4 +2635,16 @@ a[href^="tel:"] {
     padding: 14px;
   }
 }
+/* Robloxコースの開発中ラベル */
+.course-coming-soon {
+  display: inline-block;
+  background: #ffe55c;
+  color: #9b5400;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 6px;
+  vertical-align: middle;
+}
 
