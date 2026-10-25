@@ -2775,3 +2775,52 @@ a[href^="tel:"] {
     align-self: end;
   }
 }
+/* コースカードの高さと対象表示の位置を統一 */
+@media (min-width: 701px) {
+
+  .course-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .course-card {
+    display: grid;
+    grid-template-columns: 42% minmax(0, 1fr);
+    grid-template-rows: auto 1fr auto;
+    column-gap: 16px;
+    height: 100%;
+    min-height: 245px;
+    padding: 16px;
+    transform: none !important;
+  }
+
+  .course-card .course-photo {
+    grid-column: 1;
+    grid-row: 1 / 4;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+
+  .course-card h3 {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0 0 10px;
+  }
+
+  .course-card p {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 0;
+  }
+
+  .course-card > b {
+    grid-column: 2;
+    grid-row: 3;
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+    align-self: end;
+  }
+}
