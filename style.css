@@ -2647,4 +2647,48 @@ a[href^="tel:"] {
   margin-left: 6px;
   vertical-align: middle;
 }
+/* コース紹介を横長カードに変更 */
+@media (min-width: 701px) {
+  .course-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 20px;
+  }
 
+  .course-card {
+    display: grid;
+    grid-template-columns: 42% 1fr;
+    column-gap: 16px;
+    align-content: start;
+    padding: 16px;
+    border-radius: 18px !important;
+    transform: none !important;
+  }
+
+  .course-card .course-photo {
+    grid-row: 1 / 4;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .course-card h3 {
+    font-size: 18px;
+    margin: 4px 0 8px;
+  }
+
+  .course-card p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+/* スマートフォンでは縦1列 */
+@media (max-width: 700px) {
+  .course-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+.courses {
+  background: #fffaf2;
+}
