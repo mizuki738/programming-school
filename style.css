@@ -2792,4 +2792,14 @@ a[href^="tel:"] {
     align-self: end;
   }
 }
-
+/* アクセスマップの横幅を修正 */
+.access .embedded-map {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 450px;
+  margin: 12px auto 15px;
+  border: 0;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
