@@ -2792,19 +2792,13 @@ a[href^="tel:"] {
     align-self: end;
   }
 }
-/* アクセス欄を横幅いっぱいに表示 */
-.info-grid > .access {
-  grid-column: 1 / -1;
-  width: 100%;
-  min-width: 0;
-}
-
-/* 地図をアクセス欄いっぱいに表示 */
 .access iframe.embedded-map {
   display: block;
   width: 100%;
-  max-width: none;
-  height: 400px;
+  max-width: 100%;
+  height: 300px;
+  margin: 12px 0 15px;
   border: 0;
-  margin: 12px 0;
+  border-radius: 12px;
+  box-sizing: border-box;
 }
